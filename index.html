@@ -1,69 +1,56 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dimple's Nail Salon ✨</title>
+  <title>Dimple's Exercises ✨</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Header -->
-  <div class="header">
-    <h1>Dimple's Nail Salon 💅✨</h1>
-    <p>Book your sparkling nail appointment today!</p>
-  </div>
+  <header>
+    <h1>Exercises 2026 💅✨</h1>
+    <p>Minimal, clean, and functional</p>
+  </header>
 
-  <!-- Menu Bar -->
-  <div class="menu-bar">
-    <a href="#" onclick="showSection('homeSection')">Home</a>
-    <a href="#" onclick="showSection('aboutSection')">About</a>
-    <a href="#" onclick="showSection('contactSection')">Contact</a>
-  </div>
-
-  <!-- Slide Menu -->
-  <div class="slide-menu">
-    <h3>Salon Activities</h3>
+  <main>
     <ul>
-      <li><a href="#" onclick="showSection('activity1')">Welcome Message</a></li>
-      <li><a href="#" onclick="showSection('activity2')">Client Info</a></li>
-      <li><a href="#" onclick="showSection('activity3')">Price Calculator</a></li>
-      <li><a href="#" onclick="showSection('activity4')">Appointment Input</a></li>
-      <li><a href="#" onclick="showSection('activity5')">Age Check</a></li>
-      <li><a href="#" onclick="showSection('activity6')">Queue Numbers</a></li>
-      <li><a href="#" onclick="showSection('activity7')">Booking Button</a></li>
-      <li><a href="#" onclick="showSection('activity8')">Extra Example</a></li>
+      <li><button onclick="toggleTree('exercise1')">Exercise 1</button>
+        <ul id="exercise1" class="hidden">
+          <li>Activity 1</li>
+          <li>Activity 2</li>
+          <li>Activity 3</li>
+          <li>Activity 4</li>
+          <li>Activity 5</li>
+          <li>Activity 6</li>
+          <li>Activity 7</li>
+        </ul>
+      </li>
+
+      <li><button onclick="toggleTree('exercise2')">Exercise 2</button>
+        <ul id="exercise2" class="hidden">
+          <li>(Activities to be added later)</li>
+        </ul>
+      </li>
+
+      <li><button onclick="toggleTree('exercise3')">Exercise 3</button>
+        <ul id="exercise3" class="hidden">
+          <li>Activity 1</li>
+          <li>Activity 2</li>
+          <li>Activity 3</li>
+          <li>Activity 4</li>
+          <li>Activity 5</li>
+          <li>Activity 6</li>
+          <li>Activity 7</li>
+          <li>Activity 8</li>
+        </ul>
+      </li>
     </ul>
-  </div>
+  </main>
 
-  <!-- Sections -->
-  <div class="content" id="homeSection">
-    <p>We make your nails sparkle with love and care. 💖</p>
-  </div>
+  <footer>
+    <p>&copy; 2026 Dimple's Site ✨</p>
+  </footer>
 
-  <div class="content" id="aboutSection" style="display:none;">
-    <input type="text" id="aboutInput" class="sparkle-input" placeholder="Tell us about your nail style ✨">
-  </div>
-
-  <div class="content" id="contactSection" style="display:none;">
-    <p>Email: nails@dimple.com</p>
-    <p>Phone: 123-456-7890</p>
-  </div>
-
-  <!-- Activity Outputs -->
-  <div class="content" id="activity1" style="display:none;"><div id="output1"></div></div>
-  <div class="content" id="activity2" style="display:none;"><div id="output2"></div></div>
-  <div class="content" id="activity3" style="display:none;"><div id="output3"></div></div>
-  <div class="content" id="activity4" style="display:none;"><div id="output4"></div></div>
-  <div class="content" id="activity5" style="display:none;"><div id="output5"></div></div>
-  <div class="content" id="activity6" style="display:none;"><div id="output6"></div></div>
-  <div class="content" id="activity7" style="display:none;"><div id="output7"></div></div>
-  <div class="content" id="activity8" style="display:none;"><div id="output8"></div></div>
-
-  <!-- Footer -->
-  <div class="footer">
-    <p>&copy; 2026 Dimple's Nail Salon ✨</p>
-  </div>
+  <script src="script.js"></script>
 </body>
 </html>
-
