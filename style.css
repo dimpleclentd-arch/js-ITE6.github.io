@@ -1,27 +1,29 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #fffafc;
+  background-color: #f9f9f9; /* soft neutral background */
+  color: #333; /* dark gray text for readability */
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
 header {
-  background-color: #ff69b4;
-  color: white;
+  background-color: #e0e0e0; /* light gray header */
+  color: #222; /* slightly darker text */
   padding: 20px;
 }
 
 button {
-  background-color: #ffc0cb;
+  background-color: #dcdcdc; /* neutral button */
   border: none;
-  padding: 10px;
+  padding: 10px 15px;
   margin: 5px;
   cursor: pointer;
   font-size: 16px;
+  border-radius: 4px;
 }
 button:hover {
-  background-color: #ff69b4;
+  background-color: #b0b0b0; /* darker gray on hover */
   color: white;
 }
 
@@ -35,8 +37,8 @@ ul {
 }
 
 footer {
-  background-color: #ff69b4;
-  color: white;
+  background-color: #e0e0e0; /* light gray footer */
+  color: #222;
   padding: 10px;
   position: fixed;
   bottom: 0;
